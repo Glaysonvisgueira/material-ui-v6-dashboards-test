@@ -23,7 +23,6 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-
   border-radius: 6px;
   background: rgb(96, 96, 96);
 }

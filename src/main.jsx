@@ -1,19 +1,20 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import App from './App.jsx';
-import './styles/global.css';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "@mui/material-pigment-css/styles.css";
+
+import App from "./App.jsx";
+import "./styles/global.css";
 
 //Material UI reset CSS component
-import CssBaseline from '@mui/material/CssBaseline';
+import CssBaseline from "@mui/material/CssBaseline";
 
+import Layout from "./components/Layout";
 
-import Layout from './components/Layout';
-
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-      <CssBaseline />
-      <Layout>
-        <App />
-      </Layout>
-  </StrictMode>,
-)
+    <CssBaseline />
+    <Layout>
+      <App />
+    </Layout>
+  </StrictMode>
+);
